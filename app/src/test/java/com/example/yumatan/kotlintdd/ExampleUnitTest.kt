@@ -14,4 +14,11 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test
+    fun testInitializeCard() {
+        val card = Card(Suit.Heart, Rank.Three)
+        assertEquals(card.suit, Suit.Heart)
+        assertEquals(card.rank, Rank.Three)
+    }
 }
