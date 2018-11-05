@@ -17,8 +17,12 @@ class ExampleUnitTest {
 
     @Test
     fun testInitializeCard() {
-        val card = Card(Suit.Heart, Rank.Three)
-        assertEquals(card.suit, Suit.Heart)
-        assertEquals(card.rank, Rank.Three)
+        val card1 = Card(Suit.Heart, Rank.Three)
+        assertEquals(card1.suit, Suit.Heart)
+        assertEquals(card1.rank, Rank.Three)
+
+        val card2 = Card(Suit.Spade, Rank.Jack)
+        assertEquals(card2.suit, Suit.Spade)
+        assertEquals(card2.rank, Rank.Jack)
     }
 }

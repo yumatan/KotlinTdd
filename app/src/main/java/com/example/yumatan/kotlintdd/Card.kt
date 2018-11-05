@@ -7,9 +7,24 @@ class Card(suit: Suit, rank: Rank) {
 }
 
 enum class Suit {
-    Heart
+    Spade,
+    Heart,
+    Club,
+    Diamond
 }
 
 enum class Rank {
-    Three
+    One,
+    Two,
+    Three,
+    Four,
+    Five,
+    Six,
+    Seven,
+    Eight,
+    Nine,
+    Ten,
+    Jack,
+    Queen,
+    King
 }
